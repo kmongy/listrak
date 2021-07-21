@@ -13,3 +13,134 @@ html {
   margin: 0;
   padding: 0;
 }
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+.permanent-marker-text {
+  font-family: 'Permanent Marker', cursive;
+}
+.pop-up-container {
+  display: flex;
+  align-items: center;
+
+  .pop-up-main-img {
+    position: relative;
+    height: 400px;
+  }
+
+  .glass-shop-icon {
+    position: absolute;
+    top: 20px;
+    right: 0;
+  }
+  .pop-up-form {
+    background: transparent url('/imgs/Mask\ Group\ 1.png') 0% 0% no-repeat;
+    max-width: 400px;
+    max-height: 400px;
+    padding: 0 20px;
+
+    .form-header {
+      h2 {
+        color: $gold;
+        padding-top: 15px;
+        font: normal normal normal 25px/30px;
+        font-weight: 400;
+        letter-spacing: 0.63px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .percent-off-text {
+        color: $teal;
+        font-size: 55px;
+        letter-spacing: 1.38px;
+        line-height: 1.1;
+        text-align: center;
+      }
+      .free-shipping-text {
+        border-bottom: 1px solid $gold;
+        color: $gold;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        text-align: center;
+        width: 360.5px;
+        padding-bottom: 10.5px;
+        margin: 0 auto;
+      }
+    }
+
+    .form-info {
+      font-size: 17px;
+      padding: 9.5px 0 20px 0;
+
+      .bold-gold-text {
+        color: $gold;
+        font-weight: 700;
+      }
+    }
+
+    .form-email-address {
+      #email-address {
+        display: block;
+        border: none;
+        border: 1px solid $grey;
+        width: 360px;
+        height: 50px;
+        margin: 0 auto 10px auto;
+        padding: 16px 17px;
+
+        &::placeholder {
+          color: $grey;
+          font-family: inherit;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+      }
+      .decline-btn {
+        border: none;
+        background: none;
+        background: $gold 0% 0% no-repeat;
+        border-radius: 5px;
+        color: white;
+        font-family: inherit;
+        font-size: 19px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        opacity: 0.26;
+        padding: 14px 16px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .sign-up-btn {
+        border: none;
+        background: none;
+        background: #2ba58c 0% 0% no-repeat;
+        border-radius: 5px;
+        color: white;
+        font-family: inherit;
+        font-size: 19px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        text-align: center;
+        width: 204px;
+        height: 50px;
+        cursor: pointer;
+      }
+    }
+    .pop-up-privacy-policy {
+      padding: 19px 0 21px 0;
+
+      p {
+        color: $light-black;
+        font-size: 10px;
+      }
+      a {
+        color: $light-black;
+      }
+    }
+  }
+}
