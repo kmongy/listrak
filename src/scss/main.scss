@@ -135,6 +135,14 @@ body {
         height: 50px;
         cursor: pointer;
       }
+      .decline-btn:hover {
+        opacity: 1;
+        transition: ease 0.5s;
+      }
+      .sign-up-btn:hover {
+        background: $gold;
+        transition: ease 0.5s;
+      }
       .email-message {
         display: none;
       }
@@ -206,6 +214,11 @@ body {
       padding: 14px 56px;
       margin: 48px 0 16px 0;
       cursor: pointer;
+
+      &:hover {
+        background: $gold;
+        transition: ease 0.5s;
+      }
     }
 
     .close-pop-up {
