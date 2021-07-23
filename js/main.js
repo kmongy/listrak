@@ -17,9 +17,15 @@ function successClick(event) {
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   if (regexedEmailValue.test(emailValue.trim())) {
-    mainImg.src = '/imgs/pexels-riciardus-871062.png';
+    let formContainer = document.querySelector('.pop-up-form-container');
+    let successMessage = document.querySelector('.pop-up-success-message');
+
+    mainImg.src = 'imgs/pexels-riciardus-871062.png';
     mainImg.alt = 'Glasses in the sand';
-    console.log(mainImg);
+    emailErrorMessage.classList.remove('error-message');
+
+    formContainer.classList.add('success');
+    successMessage.classList.add('success');
   } else {
     emailErrorMessage.classList.add('error-message');
   }
