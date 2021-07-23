@@ -1,5 +1,6 @@
 import '/scss/main.scss';
 
+const section = document.querySelector('section');
 const declineBtn = document.querySelector('.decline-btn');
 const signUpBtn = document.querySelector('.sign-up-btn');
 
@@ -31,6 +32,10 @@ function successClick(event) {
     emailErrorMessage.classList.add('error-message');
   }
 }
+
+setTimeout(() => {
+  section.style.opacity = 1;
+}, 1500);
 
 declineBtn.addEventListener('click', declineOffer);
 signUpBtn.addEventListener('click', successClick);

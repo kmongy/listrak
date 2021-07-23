@@ -19,6 +19,10 @@ body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
 }
+section {
+  opacity: 0;
+  transition: all ease 1.5s;
+}
 .permanent-marker-text {
   font-family: 'Permanent Marker', cursive;
 }
