@@ -25,6 +25,7 @@ body {
 .pop-up-container {
   display: flex;
   align-items: center;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
 
   .pop-up-main-img {
     position: relative;
@@ -170,7 +171,7 @@ body {
   }
 
   .pop-up-success-message {
-    display: none;
+    visibility: hidden;
     position: absolute;
     top: 0;
     right: 0;
@@ -227,11 +228,16 @@ body {
       text-decoration: underline;
       margin-bottom: 24px;
       cursor: pointer;
+
+      &:hover {
+        color: $teal;
+        transition: ease 0.3s;
+      }
     }
   }
 
   .pop-up-success-message.success {
-    display: block;
+    visibility: visible;
   }
 }
 
